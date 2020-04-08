@@ -20,6 +20,7 @@ def get_nums(num=0, num_list=[]):
         if num - number in filtered_nums[index:]:
             print(num_list.index(number), num_list.index(num - number))
             return num_list.index(number), num_list.index(num - number)
+    return None,None
 
 
 if __name__ == '__main__':
