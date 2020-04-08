@@ -18,6 +18,7 @@ def get_nums(num=0, num_list=[]):
     for index, number in enumerate(filtered_nums):
         if num - number in filtered_nums[index:]:
             print(num_list.index(number), num_list.index(num - number))
+            return num_list.index(number), num_list.index(num - number)
 
 
 
