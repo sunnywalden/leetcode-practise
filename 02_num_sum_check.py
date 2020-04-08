@@ -3,6 +3,7 @@
 
 from time_decrator import time_counter
 
+
 @time_counter
 def get_nums(num=0, num_list=[]):
     """
@@ -21,8 +22,6 @@ def get_nums(num=0, num_list=[]):
             return num_list.index(number), num_list.index(num - number)
 
 
-
 if __name__ == '__main__':
     m, n = 9, [2, 7, 11, 15]
     get_nums(m, n)
-    

@@ -21,7 +21,7 @@ def middle_num(list1, list2):
     l2_lenth = len(list2)
 
     if (l1_lenth + l2_lenth) % 2 == 1:
-        return find_middle(list1, list2, (l1_lenth + l2_lenth) % 2)
+        return find_middle(list1, list2, (l1_lenth + l2_lenth) / 2)
     else:
         return (find_middle(list1, list2, (l1_lenth + l2_lenth) // 2) + find_middle(list1, list2, (l1_lenth + l2_lenth) // 2 + 1) ) / 2
 
