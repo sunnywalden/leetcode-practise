@@ -40,7 +40,7 @@ class Solution1(object):
     def lengthOfLongestSubstring(self, s):
         """
         :type s: str
-        :rtype: int
+        :rtype: dict
         """
         record_place = {}
         max_len = 0
@@ -59,11 +59,12 @@ class Solution1(object):
                     mid_max_len = i - record_place[ch]
 
             record_place[ch] = i
-
+        return record_place
 
 if __name__ == '__main__':
     test_str = 'SunnyWalden'
     longest_substring(test_str)
     s1 = Solution1()
-    s1.lengthOfLongestSubstring(test_str)
+    res = s1.lengthOfLongestSubstring(test_str)
+    print(res)
 

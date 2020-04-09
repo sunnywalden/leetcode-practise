@@ -64,6 +64,7 @@ class Solution(object):
             len2 = expand(s, i, i + 1)
             max_len = max(len1, len2)
 
+            # 大于历史值（最大长度）
             if max_len > end - start:
                 start = i - (max_len - 1) / 2
 

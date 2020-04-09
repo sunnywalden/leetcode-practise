@@ -38,7 +38,7 @@ def find_middle(l1, l2, num):
 
     if m1_index + m2_index < num:
         if m1_num > m2_num:
-            return find_middle(l1, l2[m2_index + 1:], num - m2_index -1)
+            return find_middle(l1, l2[m2_index + 1:], num - m2_index - 1)
         else:
             return find_middle(l1[m1_index + 1 :], l2, num - m1_index - 1)
     else:
