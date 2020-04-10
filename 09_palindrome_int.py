@@ -11,13 +11,7 @@ def palin_int(num):
     :return: bool
     """
     num_str = str(num)
-    # if len(num_str) // 2 == 1:
-    #     num_pair =
-    for i in range(len(num_str) // 2):
-        if num_str[i] != num_str[0 - i - 1]:
-            return False
-
-    return True
+    return num_str == num_str[::-1]
 
 if __name__ == '__main__':
     n1 = -23432
