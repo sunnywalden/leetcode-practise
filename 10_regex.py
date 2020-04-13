@@ -21,7 +21,7 @@ def regex_match(string, pattern):
                 else:
                     tmp = '*'
                     for count in range(j, len(string)):
-                        if i >= 1 and string[j] == pattern[i - 1]:
+                        if (i >= 1 and string[count] == pattern[i - 1]) or i < 1:
                             j += 1
                         else:
                             break
